@@ -1,4 +1,4 @@
-beginScriptsPath = r"F:\Files\Work\Resources\scripts_tools\Nuke\GQ_Tools"
+beginScriptsPath = r""
 
 
 class GQ_Tools(nukescripts.PythonPanel):
