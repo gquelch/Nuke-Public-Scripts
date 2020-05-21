@@ -1,3 +1,18 @@
+My Python Scripts for Nuke
+
+Jump to Documentation:
+
+[GQ_Tools](https://github.com/gquelch/Nuke-Public-Scripts#gq_tools)
+
+[Reload All Reads](https://github.com/gquelch/Nuke-Public-Scripts#reloadallreads)
+
+[Grade Convert](https://github.com/gquelch/Nuke-Public-Scripts#gradeconvert)
+
+[Open Read Path](https://github.com/gquelch/Nuke-Public-Scripts#openreadpath)
+
+[Get ABC](https://github.com/gquelch/Nuke-Public-Scripts#getabc)
+
+
 ## GQ_Tools
 
 This is my *Master* Tool, it has a few built in functions, but one of the main things it can do is load and execute python scripts, this is a problem I have faced at some studios where it is more difficult to add python scripts into the Nuke UI, this script allows you to get around that.
