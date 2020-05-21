@@ -43,11 +43,15 @@ The dropdown at the bottom of the UI is where you pick and choose the script you
 
 ---
 
+
+
 ## ReloadAllReads
 
 This script will simply reload all Read nodes in your Nuke file
 
 ---
+
+
 
 ## gradeConvert
 
@@ -57,11 +61,15 @@ Sometimes I find myself working on a grade node, and deciding I want to use Satu
 
 ---
 
+
+
 ## openReadPath
 
 This will open up a file browser at the file path for any read nodes you have selected
 
 ---
+
+
 
 ## getABC
 
@@ -120,22 +128,22 @@ If your cache files contained CAM and GEO in the file name, then it would be as 
 
 ```python
 def GQ_ABCTypeCheck(ABCDict):
-		## Split ABC Types ##
+	## Split ABC Types ##
 
-		geoList = []
-		camList = []
+	geoList = []
+	camList = []
 
-		for key in ABCDict:
-			if ABCDict[key] == True:
-				
-				if "CAM" in key:
-					camList.append(key)
+	for key in ABCDict:
+		if ABCDict[key] == True:
 
-				if "GEO" in key:
-					geoList.append(key)
-	
+			if "CAM" in key:
+				camList.append(key)
 
-		return camList, geoList
+			if "GEO" in key:
+				geoList.append(key)
+
+
+	return camList, geoList
 ```
 
 You'll want to keep the return strings the same for both of these scripts, this ensures that the rest of the script will function properly without you having to mess around with it too much
