@@ -41,6 +41,8 @@ These are fairly self explanatory, allowing you to change properties of all the 
 
 The dropdown at the bottom of the UI is where you pick and choose the script you want to run
 
+---
+
 ## ReloadAllReads
 
 This script will simply reload all Read nodes in your Nuke file
