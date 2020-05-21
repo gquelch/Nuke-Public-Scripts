@@ -6,7 +6,6 @@ The first line of the script is for you to add a path, I set this to whever I am
 
 (You can change this path on the fly once the panel has been created, but it will always default to this when made fresh)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/25415e4a-5318-4918-b52e-a8c020f5d400/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/25415e4a-5318-4918-b52e-a8c020f5d400/Untitled.png)
 
 ### Selection Tools
 
