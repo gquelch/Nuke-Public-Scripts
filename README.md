@@ -6,7 +6,7 @@ The first line of the script is for you to add a path, I set this to whever I am
 
 (You can change this path on the fly once the panel has been created, but it will always default to this when made fresh)
 
-
+   
 ### Selection Tools
 
 The top set of tools have some quick actions that let you select nodes by class, you just write each class you want to select, seperated by spaces
@@ -42,17 +42,17 @@ These are fairly self explanatory, allowing you to change properties of all the 
 The dropdown at the bottom of the UI is where you pick and choose the script you want to run
 
 ---
-
-
-
+   
+   
+   
 ## ReloadAllReads
 
 This script will simply reload all Read nodes in your Nuke file
 
 ---
-
-
-
+   
+   
+   
 ## gradeConvert
 
 Sometimes I find myself working on a grade node, and deciding I want to use Saturation, or adjust specifically the mids. Instead of creating an additional colour correct, you can copy over gamma and gain to a colour correct, and keep working.
@@ -60,17 +60,17 @@ Sometimes I find myself working on a grade node, and deciding I want to use Satu
 **Please note this will not work with Black point and White point, only Gamma, Gain and Lift**
 
 ---
-
-
-
+   
+   
+   
 ## openReadPath
 
 This will open up a file browser at the file path for any read nodes you have selected
 
 ---
-
-
-
+   
+   
+   
 ## getABC
 
 This tool is  for listing available ABC (alembic) files in a directory, **it wont work right out of the box** and that is because everyone and every company stores their publish files differently.
