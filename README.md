@@ -4,6 +4,8 @@ Jump to Documentation:
 
 [GQ_Tools](https://github.com/gquelch/Nuke-Public-Scripts#gq_tools)
 
+[Shot Comparison](https://github.com/gquelch/Nuke-Public-Scripts/blob/master/README.md#shot-comparison)
+
 [Reload All Reads](https://github.com/gquelch/Nuke-Public-Scripts#reloadallreads)
 
 [Grade Convert](https://github.com/gquelch/Nuke-Public-Scripts#gradeconvert)
@@ -60,6 +62,7 @@ The dropdown at the bottom of the UI is where you pick and choose the script you
 I built this tool to assit with shot consistency, it allows users to save image of Movs as a path in different groups, say 5 shots from the same angle, which you want to compare.
 
 You can save as many shots as you like, in as many groups as you would like, you can then create a contact sheet from these easily for comparison.
+
 ---
    
 ## ReloadAllReads
