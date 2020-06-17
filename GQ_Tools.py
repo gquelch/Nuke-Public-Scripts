@@ -1,3 +1,11 @@
+import json
+import sys
+import os
+import nuke
+import nukescripts
+
+
+# You can use this path to Auto-Fill the script search location
 beginScriptsPath = r""
 
 
@@ -86,6 +94,8 @@ class GQ_Tools(nukescripts.PythonPanel):
         else:
             gq_scriptsGet(self)
 
+        self.readStart.setValue(int(nuke.Root()['first_frame'].getValue()))
+        self.readEnd.setValue(int(nuke.Root()['last_frame'].getValue()))
 
 
     def knobChanged(self, knob):
@@ -224,22 +234,22 @@ def gq_scriptsGet(self):
 
     self.scriptDropdown.setValues(scriptList)
 
-
 def gq_runSelectedScripts(self):
     selectedScript = self.scriptDropdown.value()
     
     userScriptPath = self.scriptPath.getValue()
-
-    scriptPath = userScriptPath + "\\" + selectedScript
     
-
+    scriptImport = selectedScript.split(".")[0]
+    
     try:
-        execfile(scriptPath)
-
+        sys.path.append(userScriptPath) 
+        
+        if scriptImport not in sys.modules:
+            i = __import__(scriptImport, fromlist=[''])
+        else:
+            reload(sys.modules[scriptImport])
     except Exception, e: # work on python 2.x
-        print "Error Executing " + selectedScript + "\n" + str(e)
-
-
+        print "Error Importing and Running " + selectedScript + "\n" + str(e)
 
     self.scriptDropdown.setValue(0)
 
@@ -251,11 +261,10 @@ def showPanel():
 def addPanel():
     return GQ_Tools().addToPane()
 
-
 def addPanelToPane():
     paneMenu = nuke.menu('Pane')
     paneMenu.addCommand('GQ_Tools', addPanel)
     nukescripts.registerPanel('com.ohufx.GQ_Tools', addPanel)
-    GQ_Tools().show()
-    
+    #GQ_Tools().show()
+
 addPanelToPane()
