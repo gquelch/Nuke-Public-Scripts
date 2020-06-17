@@ -15,11 +15,9 @@ Jump to Documentation:
 
 ## GQ_Tools
 
-This is my *Master* Tool, it has a few built in functions, but one of the main things it can do is load and execute python scripts, this is a problem I have faced at some studios where it is more difficult to add python scripts into the Nuke UI, this script allows you to get around that.
+This is my *Master* Tool, it has a few built in functions, one of the main things it can do is load and execute other python scripts, this allows  you to easily change and update scripts in a folder, without restarting nuke or adding them to a pipeline. It also allows you to get around the need to copy and paste scripts into the script editor, or loading them into a specific Nuke menu.
 
-The first line of the script is for you to add a path, I set this to whever I am currently saving my scripts, you might want to change this per project, or to a global scripts directory on a network drive, but it will initially populate the UI with scripts in this folder
-
-(You can change this path on the fly once the panel has been created, but it will always default to this when made fresh)
+You are able to set a default location of your script libriary (line 9), its not nessecary, but means you odn't have to paste it in every time. I set this to whever I am currently saving my scripts, you might want to change this per project, or to a global scripts directory on a network drive.
 
    
 ### Selection Tools
