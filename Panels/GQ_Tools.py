@@ -1,3 +1,8 @@
+# Executing this script will add the panel to your Nuke Panel Menu, under "Custom"
+#I recommended importing this script into your menu.py file in order for it always be available in Nuke
+#I have a guide on that here:
+#https://gquelch.github.io/2020/06/21/Simplify-Executing-and-Sharing-Nuke-Scripts/
+
 import json
 import sys
 import os
