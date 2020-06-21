@@ -18,6 +18,8 @@ I recommend reading my guide on [importing scripts and panels](https://gquelch.g
 
 ## GQ_Tools
 
+![GQ_Tools_Panel](./documentationAssets/gqTools.png)
+
 This is my *Master* Tool, it has a few built in functions, one of the main things it can do is load and execute other python scripts, this allows  you to easily change and update scripts in a folder, without restarting nuke or adding them to a pipeline. It also allows you to get around the need to copy and paste scripts into the script editor, or loading them into a specific Nuke menu.
 
 You are able to set a default location of your script library (line 9), it's not necessary, but means you don't have to paste it in every time. I set this to wherever I am currently saving my scripts, you might want to change this per project, or to a global scripts directory on a network drive.
