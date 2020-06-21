@@ -14,6 +14,7 @@ Jump to Documentation:
 
 [Get ABC](https://github.com/gquelch/Nuke-Public-Scripts#getabc)
 
+I recommend reading my guide on [importing scripts and panels](https://gquelch.github.io/2020/06/21/Simplify-Executing-and-Sharing-Nuke-Scripts/) in order to simplify the process of adding and executing these scripts inside of Nuke, especially for the GQ_Tools and Shot Comparison Panels.
 
 ## GQ_Tools
 
