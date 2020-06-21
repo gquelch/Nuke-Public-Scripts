@@ -111,7 +111,7 @@ and our alembics could be stored here:
 
 *P:/Publish/Foo/ep_01/sh_010/anim/*
 
-We can split the first path by "/" and swap the appropriate parts of the string, in this case: the drive letter, the Project/Publish folder name, and the comp/anim folder name
+We can split the first path by "/" and swap the appropriate parts of the string, in this case: the Project/Publish folder name and the comp/anim folder name
 
 Then we would just need to re-join that list into a string, and we would have created our ABC path
 
