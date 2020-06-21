@@ -20,12 +20,12 @@ I recommend reading my guide on [importing scripts and panels](https://gquelch.g
 
 This is my *Master* Tool, it has a few built in functions, one of the main things it can do is load and execute other python scripts, this allows  you to easily change and update scripts in a folder, without restarting nuke or adding them to a pipeline. It also allows you to get around the need to copy and paste scripts into the script editor, or loading them into a specific Nuke menu.
 
-You are able to set a default location of your script libriary (line 9), its not nessecary, but means you odn't have to paste it in every time. I set this to whever I am currently saving my scripts, you might want to change this per project, or to a global scripts directory on a network drive.
+You are able to set a default location of your script library (line 9), it's not necessary, but means you don't have to paste it in every time. I set this to wherever I am currently saving my scripts, you might want to change this per project, or to a global scripts directory on a network drive.
 
    
 ### Selection Tools
 
-The top set of tools have some quick actions that let you select nodes by class, you just write each class you want to select, seperated by spaces
+The top set of tools have some quick actions that let you select nodes by class, you just write each class you want to select, separated by spaces
 
 E.g
 
@@ -60,7 +60,7 @@ The dropdown at the bottom of the UI is where you pick and choose the script you
 ---
    
 ## Shot Comparison
-I built this tool to assit with shot consistency, it allows users to save image of Movs as a path in different groups, say 5 shots from the same angle, which you want to compare.
+I built this tool to assist with shot consistency, it allows users to save images of Movs as a path in different groups, say 5 shots from the same angle, which you want to compare.
 
 You can save as many shots as you like, in as many groups as you would like, you can then create a contact sheet from these easily for comparison.
 
@@ -116,7 +116,7 @@ We can split the first path by "/" and swap the appropriate parts of the string,
 
 Then we would just need to re-join that list into a string, and we would have created our ABC path
 
-This would let us dynamically build the path for any shot we open, just from the path of the comp file - no intergration with any tracking software necessary
+This would let us dynamically build the path for any shot we open, just from the path of the comp file - no integration with any tracking software necessary
 
 that script would look like this:
 
@@ -141,7 +141,7 @@ There are many different options here, including making use of tracking software
 
 **GQ_ABCTypeCheck(ABCDict)**
 
-The other thing you will have to do which is studio specific is sort through the returned ABC files to seperate our Geo caches from Camera caches
+The other thing you will have to do which is studio specific is sort through the returned ABC files to separate our Geo caches from Camera caches
 
 This is important because both require a different node to be created in Nuke, again, this is down to how your own studio deals with file naming
 
