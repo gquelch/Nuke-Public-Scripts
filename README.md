@@ -59,20 +59,20 @@ These are fairly self explanatory, allowing you to change properties of all the 
 
 The dropdown at the bottom of the UI is where you pick and choose the script you want to run
 
----
+<br></br>
    
 ## Shot Comparison
 I built this tool to assist with shot consistency, it allows users to save images of Movs as a path in different groups, say 5 shots from the same angle, which you want to compare.
 
 You can save as many shots as you like, in as many groups as you would like, you can then create a contact sheet from these easily for comparison.
 
----
+<br></br>
    
 ## ReloadAllReads
 
 This script will simply reload all Read nodes in your Nuke file
 
----
+<br></br>
    
    
    
@@ -82,7 +82,7 @@ Sometimes I find myself working on a grade node, and deciding I want to use Satu
 
 **Please note this will not work with Black point and White point, only Gamma, Gain and Lift**
 
----
+<br></br>
    
    
    
@@ -90,9 +90,7 @@ Sometimes I find myself working on a grade node, and deciding I want to use Satu
 
 This will open up a file browser at the file path for any read nodes you have selected
 
----
-   
-   
+<br></br>
    
 ## getABC
 
@@ -101,6 +99,8 @@ This tool is  for listing available ABC (alembic) files in a directory, **it won
 in order for this to work there are two functions you'll need to tweak
 
 Once you have done the tweaks and can run the script, you should be presented with a list of alembics, here you can tick which ones you want to import, if you have a camera node selected, and you tick to import a camera, you will be given an option to replace the camera you have selected with your new one, useful for updating camera alembics in new shots!
+
+<br></br>
 
 **GQ_getABCPath()**
 
@@ -114,10 +114,11 @@ and our alembics could be stored here:
 
 *P:/Publish/Foo/ep_01/sh_010/anim/*
 
+
 We can split the first path by "/" and swap the appropriate parts of the string, in this case: the Project/Publish folder name and the comp/anim folder name
 
 Then we would just need to re-join that list into a string, and we would have created our ABC path
-
+<br></br>
 This would let us dynamically build the path for any shot we open, just from the path of the comp file - no integration with any tracking software necessary
 
 that script would look like this:
@@ -140,6 +141,8 @@ def GQ_getABCPath():
 ```
 
 There are many different options here, including making use of tracking software intergration such as fTrack or Shotgun, or potentially ENV variables, it really depends on how you or your studio operates
+
+<br></br>
 
 **GQ_ABCTypeCheck(ABCDict)**
 
