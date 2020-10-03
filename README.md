@@ -2,10 +2,6 @@ My Python Scripts for Nuke
 
 Jump to Documentation:
 
-[GQ_Tools](https://github.com/gquelch/Nuke-Public-Scripts#gq_tools)
-
-[Shot Comparison](https://github.com/gquelch/Nuke-Public-Scripts/blob/master/README.md#shot-comparison)
-
 [Reload All Reads](https://github.com/gquelch/Nuke-Public-Scripts#reloadallreads)
 
 [Grade Convert](https://github.com/gquelch/Nuke-Public-Scripts#gradeconvert)
@@ -14,60 +10,9 @@ Jump to Documentation:
 
 [Get ABC](https://github.com/gquelch/Nuke-Public-Scripts#getabc)
 
-I recommend reading my guide on [importing scripts and panels](https://gquelch.github.io/2020/06/21/Simplify-Executing-and-Sharing-Nuke-Scripts/) in order to simplify the process of adding and executing these scripts inside of Nuke, especially for the GQ_Tools and Shot Comparison Panels.
-
-## GQ_Tools
-
-![GQ_Tools_Panel](./documentationAssets/gqTools.png)
-
-This is my *Master* Tool, it has a few built in functions, one of the main things it can do is load and execute other python scripts, this allows  you to easily change and update scripts in a folder, without restarting nuke or adding them to a pipeline. It also allows you to get around the need to copy and paste scripts into the script editor, or loading them into a specific Nuke menu.
-
-You are able to set a default location of your script library (line 9), it's not necessary, but means you don't have to paste it in every time. I set this to wherever I am currently saving my scripts, you might want to change this per project, or to a global scripts directory on a network drive.
-
-   
-### Selection Tools
-
-The top set of tools have some quick actions that let you select nodes by class, you just write each class you want to select, separated by spaces
-
-E.g
-
-Blur Grade Defocus
-
-You can also "Enable all" to enable every node in your script
-
-"Disable Heavy" will disable some regularly used slow nodes:
-
-- Defocus
-- VectorBlur
-- MotionBlur
-- pgBokeh
-- ZDefocus
-
-I'm planning to add a UI soon that will allow you to pick which nodes you consider Heavy, rather than hard-coding them myself
-
-### Read Properties
-
-These are fairly self explanatory, allowing you to change properties of all the read nodes you have selected.
-
-### Scripts UI
-
-**Scripts Path** is where you add the directory in which your scripts are saved, this will load automatically when you hit Enter
-
-**Filter Scripts** allows you to search through scripts in that directory
-
-**Found Scripts** will display the scripts in that directory with any filter applied
-
-The dropdown at the bottom of the UI is where you pick and choose the script you want to run
-
 <br></br>
-   
-## Shot Comparison
-I built this tool to assist with shot consistency, it allows users to save images of Movs as a path in different groups, say 5 shots from the same angle, which you want to compare.
 
-You can save as many shots as you like, in as many groups as you would like, you can then create a contact sheet from these easily for comparison.
 
-<br></br>
-   
 ## ReloadAllReads
 
 This script will simply reload all Read nodes in your Nuke file
