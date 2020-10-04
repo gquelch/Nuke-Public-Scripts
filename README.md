@@ -6,6 +6,8 @@ Jump to Documentation:
 
 [Grade Convert](https://github.com/gquelch/Nuke-Public-Scripts#gradeconvert)
 
+[Branch Mask](https://github.com/gquelch/Nuke-Public-Scripts#branchMask)
+
 [Open Read Path](https://github.com/gquelch/Nuke-Public-Scripts#openreadpath)
 
 [Get ABC](https://github.com/gquelch/Nuke-Public-Scripts#getabc)
@@ -30,7 +32,12 @@ Sometimes I find myself working on a grade node, and deciding I want to use Satu
 <br></br>
    
    
-   
+## branchMask
+
+A robust alternative to the default nuke branch function that works correctly when branching several nodes with different mask inputs and connections. 
+
+<br></br>
+
 ## openReadPath
 
 This will open up a file browser at the file path for any read nodes you have selected
@@ -63,7 +70,9 @@ and our alembics could be stored here:
 We can split the first path by "/" and swap the appropriate parts of the string, in this case: the Project/Publish folder name and the comp/anim folder name
 
 Then we would just need to re-join that list into a string, and we would have created our ABC path
+
 <br></br>
+
 This would let us dynamically build the path for any shot we open, just from the path of the comp file - no integration with any tracking software necessary
 
 that script would look like this:
