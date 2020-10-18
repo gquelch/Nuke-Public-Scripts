@@ -1,16 +1,17 @@
-My Python Scripts for Nuke
+All of the scripts are provided wrapped inside a function, this makes larger scripts easier to maintain and organise. 
 
-Jump to Documentation:
+To run the scripts 
 
-[Reload All Reads](https://github.com/gquelch/Nuke-Public-Scripts#reloadallreads)
+- Save them to your .nuke directory
+- Add the following to your menu.py
 
-[Grade Convert](https://github.com/gquelch/Nuke-Public-Scripts#gradeconvert)
+```python
+menubar=nuke.menu("Nuke")
+m=menubar.addMenu("MyMenu")
+```
 
-[Branch Mask](https://github.com/gquelch/Nuke-Public-Scripts#branchMask)
+- Add the individual script commands to your menu.py- found below
 
-[Open Read Path](https://github.com/gquelch/Nuke-Public-Scripts#openreadpath)
-
-[Get ABC](https://github.com/gquelch/Nuke-Public-Scripts#getabc)
 
 <br></br>
 
@@ -19,15 +20,24 @@ Jump to Documentation:
 
 This script will simply reload all Read nodes in your Nuke file
 
+```python
+import reloadAllReads
+m.addCommand("reloadAllReads", "reloadAllReads.reloadAllReads()")
+```
+
 <br></br>
    
-   
-   
+ 
 ## gradeConvert
 
 Sometimes I find myself working on a grade node, and deciding I want to use Saturation, or adjust specifically the mids. Instead of creating an additional colour correct, you can copy over gamma and gain to a colour correct, and keep working.
 
 **Please note this will not work with Black point and White point, only Gamma, Gain and Lift**
+
+```python
+import GQ_gradeConvert
+m.addCommand("GQ_gradeConvert", "GQ_gradeConvert.gq_gradeConvertWin()")
+```
 
 <br></br>
    
@@ -36,12 +46,37 @@ Sometimes I find myself working on a grade node, and deciding I want to use Satu
 
 A robust alternative to the default nuke branch function that works correctly when branching several nodes with different mask inputs and connections. 
 
+```python
+import GQ_branchMask
+m.addCommand("GQ_branchMask", "GQ_branchMask.GQ_branchMask()", "CTRL+ALT+B")
+```
 <br></br>
 
 ## openReadPath
 
 This will open up a file browser at the file path for any read nodes you have selected
 
+```python
+import GQ_openReadPath
+m.addCommand("GQ_openReadPath", "GQ_openReadPath.open_file()")
+```
+<br></br>
+
+## Set Label
+A popup that allows you to set a label on selected nodes
+
+I have attached this to ALT+L
+
+It supports TCL scripts, If you select "TCL Value" whatever you type in the box will be converted to TCL like so:
+
+```python
+[ value "Your Entry" ]
+```
+
+```python
+import GQ_setLabel
+m.addCommand("GQ_setLabel", "GQ_setLabel.gq_setLabel()", "ALT+L")
+```
 <br></br>
    
 ## getABC
