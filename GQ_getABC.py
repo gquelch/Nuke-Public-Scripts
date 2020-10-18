@@ -142,7 +142,3 @@ def GQ_ABCTypeCheck(ABCDict):
             '''
 
     return camList, geoList
-    
-   
-GQ_getABC()
-

@@ -1,4 +1,5 @@
 import os
+import nuke
 
 nuke.root().begin()
 
@@ -8,8 +9,6 @@ def open_file():
     for i in mySel:
         filePath = mySel[0].knob("file").getValue()
 
-        filePathSplit = filePath.rsplit("/",2)
+        filePathSplit = filePath.rsplit("/",1)
 
         os.startfile(filePathSplit[0])  
-
-open_file()

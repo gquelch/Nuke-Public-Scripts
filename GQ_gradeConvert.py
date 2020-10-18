@@ -55,10 +55,8 @@ def gq_gradeConvert(target):
             c.connectInput(0,iColInput)
 
             #set position
-            c.knob("xpos").setValue(i.knob("xpos").getValue()+100)
+            c.knob("xpos").setValue(i.knob("xpos").getValue()-100)
             c.knob("ypos").setValue(i.knob("ypos").getValue())
 
         else:
             print "this only works for grades"
-
-gq_gradeConvertWin()
