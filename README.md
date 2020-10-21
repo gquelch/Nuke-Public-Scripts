@@ -1,4 +1,4 @@
-All of the scripts are provided wrapped inside a function, this makes larger scripts easier to maintain and organise. 
+All of the scripts are provided wrapped inside a function, this makes larger scripts easier to maintain and organise 
 
 To run the scripts 
 
@@ -17,52 +17,55 @@ m=menubar.addMenu("MyMenu")
 
 
 ## ReloadAllReads
-
-This script will simply reload all Read nodes in your Nuke file
-
 ```python
 import reloadAllReads
 m.addCommand("reloadAllReads", "reloadAllReads.reloadAllReads()")
 ```
+This script will simply reload all Read nodes in your Nuke file
+
 
 <br></br>
    
  
 ## gradeConvert
-
-Sometimes I find myself working on a grade node, and deciding I want to use Saturation, or adjust specifically the mids. Instead of creating an additional colour correct, you can copy over gamma and gain to a colour correct, and keep working.
-
-**Please note this will not work with Black point and White point, only Gamma, Gain and Lift**
-
 ```python
 import GQ_gradeConvert
 m.addCommand("GQ_gradeConvert", "GQ_gradeConvert.gq_gradeConvertWin()")
 ```
 
+Sometimes I find myself working on a grade node, and deciding I want to use Saturation, or adjust specifically the mids. Instead of creating an additional colour correct, you can copy over gamma and gain to a colour correct, and keep working.
+
+**Please note this will not work with Black point and White point, only Gamma, Gain and Lift**
+
 <br></br>
    
    
 ## branchMask
-
-A robust alternative to the default nuke branch function that works correctly when branching several nodes with different mask inputs and connections. 
-
 ```python
 import GQ_branchMask
 m.addCommand("GQ_branchMask", "GQ_branchMask.GQ_branchMask()", "CTRL+ALT+B")
 ```
+
+A robust alternative to the default nuke branch function that works correctly when branching several nodes with different mask inputs and connections. 
+
 <br></br>
 
 ## openReadPath
-
-This will open up a file browser at the file path for any read nodes you have selected
-
 ```python
 import GQ_openReadPath
 m.addCommand("GQ_openReadPath", "GQ_openReadPath.open_file()")
 ```
+
+This will open up a file browser at the file path for any read nodes you have selected
+
 <br></br>
 
 ## Set Label
+```python
+import GQ_setLabel
+m.addCommand("GQ_setLabel", "GQ_setLabel.gq_setLabel()", "ALT+L")
+```
+
 A popup that allows you to set a label on selected nodes
 
 I have attached this to ALT+L
@@ -73,10 +76,6 @@ It supports TCL scripts, If you select "TCL Value" whatever you type in the box 
 [ value "Your Entry" ]
 ```
 
-```python
-import GQ_setLabel
-m.addCommand("GQ_setLabel", "GQ_setLabel.gq_setLabel()", "ALT+L")
-```
 <br></br>
    
 ## getABC
@@ -129,7 +128,7 @@ def GQ_getABCPath():
 	return abcPath
 ```
 
-There are many different options here, including making use of tracking software intergration such as fTrack or Shotgun, or potentially ENV variables, it really depends on how you or your studio operates
+There are many different options here, including making use of tracking software integration such as fTrack or Shotgun, or potentially ENV variables, it really depends on how you or your studio operates
 
 <br></br>
 
