@@ -33,7 +33,7 @@ import GQ_gradeConvert
 m.addCommand("GQ_gradeConvert", "GQ_gradeConvert.gq_gradeConvertWin()")
 ```
 
-Sometimes I find myself working on a grade node, and deciding I want to use Saturation, or adjust specifically the mids. Instead of creating an additional colour correct, you can copy over gamma and gain to a colour correct, and keep working.
+Occasionally when working with a grade node I find I want to swap to a colorCorrect, instead of deleting and starting again, or creating the colorCorrect and copying the values, you can this script to transfer the values over to Master, Shadows, Mids or Highlights automatically.
 
 **Please note this will not work with Black point and White point, only Gamma, Gain and Lift**
 
