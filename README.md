@@ -1,6 +1,6 @@
 All of the scripts are provided wrapped inside a function, this makes larger scripts easier to maintain and organise 
 
-**To run the scripts **
+**To add the scripts**
 
 - Save them to your .nuke directory
 - Add the following to your menu.py
