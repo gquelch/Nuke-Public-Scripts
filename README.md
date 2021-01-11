@@ -1,6 +1,6 @@
 All of the scripts are provided wrapped inside a function, this makes larger scripts easier to maintain and organise 
 
-To run the scripts 
+**To run the scripts **
 
 - Save them to your .nuke directory
 - Add the following to your menu.py
@@ -10,8 +10,47 @@ menubar=nuke.menu("Nuke")
 m=menubar.addMenu("MyMenu")
 ```
 
-- Add the individual script commands to your menu.py- found below
+- Add the individual script commands, from below, to you menu.py
 
+**OR**
+
+- Download all of the scripts as well as the menu.py I have provided, and save them in your .nuke directory
+
+
+<br></br>
+
+## GQ_Tools
+
+GQ_Tools is a python panel with a few handy functions
+
+```python
+import GQ_Tools
+m.addCommand("GQ_Tools", "GQ_Tools.showPanel()")
+```
+
+### Selection Tools
+
+The top set of tools have some quick actions that let you select nodes by class, you just write each class you want to select, separated by spaces
+
+E.g
+
+Blur Grade Defocus
+
+You can also "Enable all" to enable every node in your script
+
+"Disable Heavy" will disable some regularly used slow nodes:
+
+-   Defocus
+-   VectorBlur
+-   MotionBlur
+-   pgBokeh
+-   ZDefocus
+
+I'm planning to add a UI soon that will allow you to pick which nodes you consider Heavy, rather than hard-coding them myself
+
+### Read Properties
+
+These are fairly self-explanatory, allowing you to change properties of all the read nodes you have selected.
 
 <br></br>
 
@@ -25,7 +64,7 @@ This script will simply reload all Read nodes in your Nuke file
 
 
 <br></br>
-   
+
  
 ## gradeConvert
 ```python
